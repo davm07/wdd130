@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&family=Yatra+One&display=swap');
+
 body {
     background-color: #FFFFFF;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -15,6 +21,10 @@ nav a:hover{
     background-color: #E9A127;
     color: #5B5B5B;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -32,6 +42,7 @@ nav a {
     background-color: #E9A127;
     color: #5B5B5B;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1{
@@ -50,6 +61,10 @@ main section{
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background{
     height: 725px;
     background-color: #1574A4;
@@ -57,6 +72,8 @@ main section{
 
 .msg {
     background-color: #1574A4;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
@@ -66,6 +83,9 @@ footer {
 
 .home-title {
     color: #1574A4;
+    font-family: "Yatra One", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4{
@@ -74,10 +94,13 @@ h4{
 
 .msg h2{
     color: #E9A127;
+    font-family: "Yatra One", Helvetica, sans-serif;
 }
 
 .msg p {
     color: #FFFFFF;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a{
@@ -103,4 +126,44 @@ footer p{
 
 footer p a:hover{
     text-decoration: underline;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card {
+    font-family: "Yatra One", Helvetica, sans-serif;
+    margin: 200px 0;
+}
+
+.camping-card {
+    font-family: "Yatra One", Helvetica, sans-serif;
+    margin: 200px 0;
+}
+
+.rapids-card {
+    font-family: "Yatra One", Helvetica, sans-serif;
+    margin: 200px 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.icon {
+    padding-top: 10px;
+}
+
+.card-img {
+    border: 10px solid #E9A127;
 }
