@@ -221,6 +221,167 @@ h2 {
     box-shadow: 5px 5px 10px #5B5B5B;
 }
 
+/* ---------------------css for the subpage---------------------  */
+
+#title {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#title-background {
+    background-color: #5B5B5B;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    width: 100%;
+}
+
+#title-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#title-msg {
+    text-align: center;
+}
+
+.rivers-title {
+    color: #E9A127;
+    font-family: "Yatra One", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#title-msg h4 {
+    margin-top: 0;
+    color: #FFFFFF;
+}
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 3.75fr 0.25fr 3.75fr 0.5fr;
+    background-color: #f9f9f9;
+}
+
+.idaho-river {
+    margin: 100px 0;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.utah-river {
+    margin: 100px 0;
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+
+.arizona-river {
+    margin: 100px 0;
+    grid-column: 2/3;
+    grid-row: 5/7;
+}
+
+.rivers-img {
+    border: 10px solid #E9A127;
+    width: 100%;
+    transition: transform .5s;
+}
+
+.rivers-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 #5B5B5B, 0 6px 20px 0 #5B5B5B;
+}
+
+.idaho-info {
+    font-family: "Work Sans", Helvetica, sans-serif;
+    font-size: 1vw;
+    margin: 100px 0;
+    grid-column: 4/5;
+    grid-row: 1/3
+}
+
+.idaho-info h1 {
+    font-family: "Yatra One", Helvetica, sans-serif;
+    color: #1574A4;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+}
+
+.idaho-info p {
+    margin-top: 0;
+    text-align: justify;
+    color: #5B5B5B;
+    padding-bottom: 20px;
+}
+
+.utah-info {
+    font-family: "Work Sans", Helvetica, sans-serif;
+    font-size: 1vw;
+    margin: 100px 0;
+    grid-column: 2/3;
+    grid-row: 3/5
+}
+
+.utah-info h1 {
+    font-family: "Yatra One", Helvetica, sans-serif;
+    color: #1574A4;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+}
+
+.utah-info p {
+    margin-top: 45px;
+    text-align: justify;
+    color: #5B5B5B;
+    padding-bottom: 20px;
+}
+
+.arizona-info {
+    font-family: "Work Sans", Helvetica, sans-serif;
+    font-size: 1vw;
+    margin: 100px 0;
+    grid-column: 4/5;
+    grid-row: 5/7
+}
+
+.arizona-info h1 {
+    font-family: "Yatra One", Helvetica, sans-serif;
+    color: #1574A4;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+}
+
+.arizona-info p {
+    margin-top: 45px;
+    text-align: justify;
+    color: #5B5B5B;
+    padding-bottom: 20px;
+}
+
+.button-rivers{
+    text-align: center;
+}
+
+.book2 {
+    background-color: #E9A127;
+    color: #5B5B5B;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.book2:hover {
+    background-color: #f9f9f9;
+    color: #1574A4;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -261,4 +422,51 @@ h2 {
     footer {
         margin-top: 25px;
     }
+
+    #title, .rivers-grid{
+        display: block;
+        height: auto;
+    }
+
+    #title {
+        margin-top: 0;
+    }
+
+    #title-msg {
+        background-color: #5B5B5B;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .rivers-title {
+        font-size: 25px;
+    }
+
+    .rivers-grid {
+        padding-top: 1px;
+    }
+
+    .idaho-river, .utah-river, .arizona-river{
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .idaho-info, .utah-info {
+        margin: 20px 20px;
+        font-size: 15px
+    }
+
+    .arizona-info {
+        margin: 10px 20px;
+        font-size: 15px
+    }
+
+    .idaho-info h1, .utah-info h1, .arizona-info h1 {
+        margin: 0 auto;
+    }
+
+    .idaho-info p, .utah-info p, .arizona-info p {
+        margin-top: 5px;
+    }
+
 }
