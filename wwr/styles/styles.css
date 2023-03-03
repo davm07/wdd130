@@ -451,13 +451,8 @@ h2 {
         width: 80%;
     }
 
-    .idaho-info, .utah-info {
+    .idaho-info, .utah-info, .arizona-info{
         margin: 20px 20px;
-        font-size: 15px
-    }
-
-    .arizona-info {
-        margin: 10px 20px;
         font-size: 15px
     }
 
