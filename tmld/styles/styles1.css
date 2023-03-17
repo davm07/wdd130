@@ -194,7 +194,7 @@ nav a:hover {
 #dj-info{
     display: grid;
     grid-template-columns: 1fr 0.2fr 1fr;
-    grid-row: 0.2fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
     gap: 20px;
     margin-bottom: 50px;
 }
@@ -241,11 +241,9 @@ nav a:hover {
 }
 
 .slide-info1 {
-    white-space: wrap; 
     color: white;
     font-size: 1em;
     position: absolute;
-    overflow: wrap;
     top: 30%;
     left: 30%;
     transform: translate(-30%, -30%);
@@ -270,11 +268,9 @@ nav a:hover {
 }
 
 .slide-info2 {
-    white-space: wrap; 
     color: white;
     font-size: 1em;
     position: absolute;
-    overflow: wrap;
     top: 30%;
     left: 30%;
     transform: translate(-30%, -30%);
@@ -298,12 +294,10 @@ nav a:hover {
     margin-bottom:0px;
 }
 
-.slide-info3 {
-    white-space: wrap; 
+.slide-info3 { 
     color: white;
     font-size: 1em;
     position: absolute;
-    overflow: wrap;
     top: 25%;
     left: 25%;
     transform: translate(-25%, -25%);
@@ -327,12 +321,10 @@ nav a:hover {
     margin-bottom:0px;
 }
 
-.slide-info4 {
-    white-space: wrap; 
+.slide-info4 { 
     color: white;
     font-size: 1em;
     position: absolute;
-    overflow: wrap;
     top: 25%;
     left: 25%;
     transform: translate(-25%, -25%);
@@ -357,11 +349,9 @@ nav a:hover {
 }
 
 .slide-info5 {
-    white-space: wrap; 
     color: white;
     font-size: 1em;
     position: absolute;
-    overflow: wrap;
     top: 25%;
     left: 25%;
     transform: translate(-25%, -25%);
@@ -386,11 +376,9 @@ nav a:hover {
 }
 
 .slide-info6 {
-    white-space: wrap; 
     color: white;
     font-size: 1em;
     position: absolute;
-    overflow: wrap;
     top: 25%;
     left: 25%;
     transform: translate(-25%, -25%);
