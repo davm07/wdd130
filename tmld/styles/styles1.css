@@ -543,7 +543,7 @@ footer p:nth-of-type(3) {
     #hero {
         display: grid;
         grid-template-columns: 0.5fr 1fr 0.5fr;
-        margin-top: -15%;
+        margin-top: -20%;
     }
 
     #hero-msg {
@@ -563,7 +563,7 @@ footer p:nth-of-type(3) {
     }
 
     #cta-button {
-        margin-top: 45%;
+        margin-top: 70%;
         grid-column: 2/3;
         font-size: calc(0.8vw + 0.8vh);
         margin-right: 0px;
