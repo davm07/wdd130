@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>FutureWorld | Home</title>
 </head>
 <body>
-    <div id="content-home">
+    <div class="content-home">
         <header>
             <a href="index.html" id="logo_link">
                 <img class="logo_tmld" src="images/logo-page.png" alt="FutureWorld Logo">
             </a>
-            <nav>
+            <nav id="myLinks">  
                 <a href="index.html">Home</a>
                 <a href="tickets-admission.html">Tickets and Admissions</a>
                 <a href="eventinformation.html">Event Information</a>
@@ -21,6 +22,9 @@
                         <a href="contactus.html">Contact Us</a>
                 </div>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </header>
         <div id="hero">
             <div id="hero-video">
@@ -101,85 +105,73 @@
             </section>
             <section id="dj-info">
                 <h2>Most Iconic Dj's</h2>
-                    <div class="container1">
-                        <img class="imgdj" src="images/aoki.jpg" alt="Steve Aoki">
-                        <div class="overlay">
-                            <div class="slide-info1">
-                                <h4>Steve Aoki</h4>
-                                <p>Steve Aoki is a highly successful DJ, record producer, and entrepreneur who started his music 
-                                    career in the early 2000s. He is renowned for his energetic performances and collaborations 
-                                    with various artists, including BTS, Linkin Park, and Louis Tomlinson. With over two decades 
-                                    of experience in the music industry, Steve Aoki continues to be a prominent figure in the 
-                                    electronic dance music scene. Some of Steve Aoki's most listened songs include: "No Beef", "Pursuit of hapiness", 
-                                "Delirious", "Boneless".</p>
-                            </div>
-                        </div>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/aoki.jpg" style="width:100%" alt="Steve Aoki">
+                        <div class="text"><h3>Steve Aoki</h3>Steve Aoki is a highly successful DJ, record producer, and entrepreneur who started his music 
+                            career in the early 2000s. He is renowned for his energetic performances and collaborations 
+                            with various artists, including BTS, Linkin Park, and Louis Tomlinson. With over two decades 
+                            of experience in the music industry, Steve Aoki continues to be a prominent figure in the 
+                            electronic dance music scene. Some of Steve Aoki's most listened songs include: "No Beef", "Pursuit of hapiness", 
+                        "Delirious", "Boneless".</div>
                     </div>
-                    <div class="container2">
-                        <img class="imgdj" src="images/dmitri.jpg" alt="Dimitri Vegas & Like Mike">
-                        <div class="overlay">
-                            <div class="slide-info2">
-                                <h4>Dimitri Vegas & Like Mike</h4>
-                                <p>Dimitri Vegas and Like Mike are a Belgian DJ duo consisting of brothers Dimitri and Michael Thivaios. 
-                                    They started their career in the early 2000s and have since become one of the most successful acts in 
-                                    the electronic dance music scene. They have also won several awards, including the DJ Mag Top 100 DJs 
-                                    award in 2015 and 2019. Some of their most listened songs include: "Mammoth", "The Hum", "Tremor", "Complicated", 
-                                    and "When I Grow Up".</p>
-                            </div>
-                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/dmitri.jpg" style="width:100%" alt="Dimitri Vegas and Like Mike">
+                        <div class="text"><h3>Dimitri Vegas & Like Mike</h3>Dimitri Vegas and Like Mike are a Belgian DJ duo consisting of brothers Dimitri and Michael Thivaios. 
+                            They started their career in the early 2000s and have since become one of the most successful acts in 
+                            the electronic dance music scene. They have also won several awards, including the DJ Mag Top 100 DJs 
+                            award in 2015 and 2019. Some of their most listened songs include: "Mammoth", "The Hum", "Tremor", "Complicated", 
+                            and "When I Grow Up".</div>
                     </div>
-                    <div class="container3">
-                        <img class="imgdj" src="images/vanbuuren.jpg" alt="Armin Van Buuren">
-                        <div class="overlay">
-                            <div class="slide-info3">
-                                <h4>Armin Van Buuren</h4>
-                                <p>Armin Van Buuren is a Dutch DJ, record producer, and remixer who is widely regarded as one of the greatest DJs of 
-                                    all time. He began his music career in the early 1990s and has since become a global phenomenon. 
-                                    He is known for his uplifting and progressive trance music, and has won numerous awards for his contributions 
-                                    to the electronic dance music scene. Some of his most listened songs include "This Is What It Feels Like" featuring Trevor Guthrie, 
-                                    "Blah Blah Blah," "In and Out of Love" featuring Sharon den Adel, and "Sunny Days" 
-                                    featuring Josh Cumbee.</p>
-                            </div>
-                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/vanbuuren.jpg" style="width:100%" alt="Armin Van Buuren">
+                        <div class="text"><h3>Armin Van Buuren</h3>Armin Van Buuren is a Dutch DJ, record producer, and remixer who is widely regarded as one of the greatest DJs of 
+                            all time. He began his music career in the early 1990s and has since become a global phenomenon. 
+                            He is known for his uplifting and progressive trance music, and has won numerous awards for his contributions 
+                            to the electronic dance music scene. Some of his most listened songs include "This Is What It Feels Like" featuring Trevor Guthrie, 
+                            "Blah Blah Blah," "In and Out of Love" featuring Sharon den Adel, and "Sunny Days" 
+                            featuring Josh Cumbee.</div>
                     </div>
-                    <div class="container4">
-                        <img class="imgdj" src="images/garrix.jpg" alt="Martin Garrix">
-                        <div class="overlay">
-                            <div class="slide-info4">
-                                <h4>Martin Garrix</h4>
-                                <p>Martin Garrix is a Dutch DJ, record producer, and musician who became famous for his breakout hit "Animals" in 2013. 
-                                    He began his music career at a young age and has since become one of the most successful 
-                                    DJs in the world. Martin Garrix is known for his energetic and melodic style of music, which combines elements of 
-                                    progressive house, electro house, and pop. Some of his most listened songs include "Scared to be Lonely" featuring Dua Lipa, 
-                                    "There for You" featuring Troye Sivan, "Animals," and "Tremor" with Dimitri Vegas and Like Mike.</p>
-                            </div>
-                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/garrix.jpg" style="width:100%" alt="Martin Garrix">
+                        <div class="text"><h3>Martin Garrix</h3>Martin Garrix is a Dutch DJ, record producer, and musician who became famous for his breakout hit "Animals" in 2013. 
+                            He began his music career at a young age and has since become one of the most successful 
+                            DJs in the world. Martin Garrix is known for his energetic and melodic style of music, which combines elements of 
+                            progressive house, electro house, and pop. Some of his most listened songs include "Scared to be Lonely" featuring Dua Lipa, 
+                            "There for You" featuring Troye Sivan, "Animals," and "Tremor" with Dimitri Vegas and Like Mike.</div>
                     </div>
-                    <div class="container5">
-                        <img class="imgdj" src="images/tiesto.jpg" alt="Tiësto">
-                        <div class="overlay">  
-                            <div class="slide-info5">
-                                <h4>Tiësto</h4>
-                                <p>Tiesto, is a Dutch DJ and record producer who started his music career in the early 1990s. He is considered one of 
-                                    the pioneers of trance music and has since expanded his musical style to include elements of electro house, 
-                                    progressive house, and pop. Tiesto has released several albums, including "In My Memory," "Elements of Life," and 
-                                    "A Town Called Paradise," and has collaborated with various artists such as Calvin Harris, Martin Garrix, and Dzeko.
-                                    Some of his most listened songs include "Adagio for Strings," "Red Lights," "Jackie Chan" and "The Business".</p>
-                            </div>
-                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/tiesto.jpg" style="width:100%" alt="Tiësto">
+                        <div class="text"><h3>Tiësto</h3>Tiesto, is a Dutch DJ and record producer who started his music career in the early 1990s. He is considered one of 
+                            the pioneers of trance music and has since expanded his musical style to include elements of electro house, 
+                            progressive house, and pop. Tiesto has released several albums, including "In My Memory," "Elements of Life," and 
+                            "A Town Called Paradise," and has collaborated with various artists such as Calvin Harris, Martin Garrix, and Dzeko.
+                            Some of his most listened songs include "Adagio for Strings," "Red Lights," "Jackie Chan" and "The Business".</div>
                     </div>
-                    <div class="container6">
-                        <img class="imgdj" src="images/marshmello.jpg" alt="Marshmello">
-                        <div class="overlay">
-                            <div class="slide-info6">
-                                <h4>Marshmello</h4>
-                                <p>Marshmello is an American electronic dance music producer and DJ who rose to fame in 2015. Despite his anonymity, Marshmello 
-                                    is known for his iconic white helmet mask and has become one of the most successful DJs in the world. Some of his most 
-                                    listened songs include "Happier" with Bastille, "Friends" featuring Anne-Marie, and "Wolves" with Selena Gomez. Marshmello has collaborated with 
-                                    various artists and has released several albums, including "Joytime," "Joytime II," and "Joytime III".</p>
-                            </div>
-                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/marshmello.jpg" style="width:100%" alt="Marshmello">
+                        <div class="text"><h3>Marshmello</h3>Marshmello is an American electronic dance music producer and DJ who rose to fame in 2015. Despite his anonymity, Marshmello 
+                            is known for his iconic white helmet mask and has become one of the most successful DJs in the world. Some of his most 
+                            listened songs include "Happier" with Bastille, "Friends" featuring Anne-Marie, and "Wolves" with Selena Gomez. Marshmello has collaborated with 
+                            various artists and has released several albums, including "Joytime," "Joytime II," and "Joytime III".</div>
                     </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div id="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
             </section>
         </main>
         <footer>
@@ -200,5 +192,42 @@
             <p>FutureWorld &copy; 2023 - Diego Vasquez</p>
         </footer>
     </div>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
