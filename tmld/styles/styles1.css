@@ -743,13 +743,15 @@ footer p:nth-of-type(3) {
     .contact-button a{
         background-color: transparent;
         border: 0px;
-        padding-top: none;
-        padding-bottom: none;
-        border-radius: none;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-radius: 0px;
         text-align: right;
     }
     
     .contact-button a:hover{
+        padding-top: 0px;
+        padding-bottom: 0px;
         text-decoration: none;
         border: none;
         background-color: transparent;
