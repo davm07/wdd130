@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>| Event Information |</title>
 </head>
 <body>
-    <div id="content-home">
+    <div class="content-home">
         <header>
             <a href="index.html" id="logo_link">
                 <img class="logo_tmld" src="images/logo-page.png" alt="FutureWorld Logo">
             </a>
-            <nav>
+            <nav id="myLinks">
                 <a href="index.html">Home</a>
                 <a href="tickets-admission.html">Tickets and Admissions</a>
                 <a href="eventinformation.html">Event Information</a>
@@ -21,6 +22,9 @@
                         <a href="contactus.html">Contact Us</a>
                 </div>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </header>
         <div id="hero-3">
             <div id="hero-banner">
@@ -37,7 +41,7 @@
         <main class="third-grid">
             <section id="venue-info">
                 <div id="background-venue"></div>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1xnFhiOcOxYvMUeAReDkwJ7vL69LSchY&hl=es-419&ehbc=2E312F" width="640" height="480"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1xnFhiOcOxYvMUeAReDkwJ7vL69LSchY&hl=es-419&ehbc=2E312F"></iframe>
                 <div id="event-information">
                     <h3>Venue Information</h3>
                     <p>Welcome to the FutureWorld Music Festival! This year's event takes place at the beautiful Lake Führinger. The 
@@ -95,5 +99,15 @@
             <p>FutureWorld &copy; 2023 - Diego Vasquez</p>
         </footer>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
