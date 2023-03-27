@@ -690,6 +690,10 @@ footer p:nth-of-type(3) {
         height: auto;
     }
 
+    .logo_tmld {
+        width: 10%;
+    }
+
     header {
         display: block;
         overflow: hidden;
@@ -728,7 +732,7 @@ footer p:nth-of-type(3) {
 
     header a.icon {
         color: #D8BE71;
-        margin-top: 34px;
+        margin-top: 12px;
         margin-right: 16px;
         display: block;
         position: absolute;
