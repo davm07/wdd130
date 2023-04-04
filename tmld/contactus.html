@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>| Tickets and Admissions |</title>
+    <style>
+        form {
+            /* Center the form on the page */
+                margin: 80px auto;
+                width: 400px;
+                /* Form outline */
+                padding: 1em;
+                border: 1px solid #D8BE71;
+                border-radius: 1em;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            form li + li {
+                margin-top: 1em;
+            }
+
+            label {
+                /* Uniform size & alignment */
+                display: inline-block;
+                width: 90px;
+                text-align: right;
+                color: #D8BE71;
+            }
+
+            input,
+            textarea {
+                /* To make sure that all text fields have the same font settings
+                    By default, textareas have a monospace font */
+                font: 1em sans-serif;
+                color: #D8BE71;
+
+                /* Uniform text field size */
+                width: 300px;
+                box-sizing: border-box;
+
+                /* Match form field borders */
+                border: 1px solid #D8BE71;
+            }
+
+            input:focus,
+            textarea:focus {
+                /* Additional highlight for focused elements */
+                border-color: #D8BE71;
+            }
+
+            textarea {
+                /* Align multiline text fields with their labels */
+                vertical-align: top;
+
+                /* Provide space to type some text */
+                height: 5em;
+            }
+
+            .button {
+                /* Align buttons with the text fields */
+                padding-left: 90px; /* same size as the label elements */
+            }
+
+            button {
+                /* This extra margin represent roughly the same space as the space
+                    between the labels and their text fields */
+                margin-left: 0.5em;
+            }
+
+            #feedback {
+                background-color: #1D1E3B;
+                color: #D8BE71;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding: .5em;
+                /* make this element invisible until we are ready for it */
+                display: none;      
+            }
+            .moveDown {
+                margin-top: 3em;
+            }
+
+            @media screen and (max-width: 700px){
+                form {
+                    width: auto;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="content-home">
+        <header>
+            <a href="index.html" id="logo_link">
+                <img class="logo_tmld" src="images/logo-page.png" alt="FutureWorld Logo">
+            </a>
+            <nav id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="tickets-admission.html">Tickets and Admissions</a>
+                <a href="eventinformation.html">Event Information</a>
+                <div class="contact-button">
+                        <a href="contactus.html">Contact Us</a>
+                </div>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+        <main>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>   
+                </ul>
+            </form> 
+        </main>
+        <footer>
+            <h3>FutureWorld</h3>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <p>FutureWorld &copy; 2023 - Diego Vasquez</p>
+        </footer>
+    </div>
+    <script>
+        //get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        };
+
+    </script>
+</body>
+</html>
